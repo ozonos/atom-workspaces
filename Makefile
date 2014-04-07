@@ -1,11 +1,11 @@
 # Basic Makefile
 
-UUID = nos-workspaces@numixproject.org
+UUID = atom-workspaces@numixproject.org
 BASE_MODULES = extension.js stylesheet.css metadata.json LICENSE.md README.md
 EXTRA_MODULES = 
 TOLOCALIZE =  
 INSTALLBASE = ~/.local/share/gnome-shell/extensions
-INSTALLNAME = nos-workspaces@numixproject.org
+INSTALLNAME = atom-workspaces@numixproject.org
 
 all: extension
 
@@ -44,7 +44,7 @@ _build: all
 		lf=_build/locale/`basename $$l .mo`; \
 		mkdir -p $$lf; \
 		mkdir -p $$lf/LC_MESSAGES; \
-		cp $$l $$lf/LC_MESSAGES/nos-dash.mo; \
+		cp $$l $$lf/LC_MESSAGES/atom-dash.mo; \
 	done;
 
 

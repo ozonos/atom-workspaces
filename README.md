@@ -1,2 +1,2 @@
-nos-workspaces
+Atom workspaces
 ==============

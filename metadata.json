@@ -1,1 +1,6 @@
-{"shell-version": ["3.10.4"], "uuid": "nos-workspaces@numixproject.org", "name": "Numix Workspaces", "description": "Horizontal dynamic workspaces"}
+{
+    "shell-version": ["3.10"],
+    "uuid": "atom-workspaces@numixproject.org",
+    "name": "Atom workspaces",
+    "description": "Horizontal dynamic workspaces"
+}
