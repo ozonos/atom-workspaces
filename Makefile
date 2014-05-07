@@ -14,7 +14,7 @@ clean:
 
 extension: ./schemas/gschemas.compiled
 
-./schemas/gschemas.compiled: ./schemas/org.gnome.shell.extensions.gnome-extension-template.gschema.xml
+./schemas/gschemas.compiled: ./schemas/org.gnome.shell.extension.atom-workspaces.gschema.xml
 	glib-compile-schemas ./schemas/
 
 install: install-local
