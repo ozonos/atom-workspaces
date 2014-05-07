@@ -1,7 +1,7 @@
 # Basic Makefile
 
 UUID = atom-workspaces@numixproject.org
-BASE_MODULES = extension.js stylesheet.css metadata.json LICENSE.md README.md
+BASE_MODULES = extension.js stylesheet.css metadata.json LICENSE README.md
 EXTRA_MODULES = 
 TOLOCALIZE =  
 INSTALLBASE = ~/.local/share/gnome-shell/extensions
