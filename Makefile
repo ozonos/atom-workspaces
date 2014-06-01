@@ -1,7 +1,7 @@
 # Basic Makefile
 
 UUID = atom-workspaces@numixproject.org
-BASE_MODULES = extension.js stylesheet.css metadata.json LICENSE.md README.md
+BASE_MODULES = extension.js stylesheet.css metadata.json LICENSE README.md
 EXTRA_MODULES = 
 TOLOCALIZE =  
 INSTALLBASE = ~/.local/share/gnome-shell/extensions
@@ -14,7 +14,7 @@ clean:
 
 extension: ./schemas/gschemas.compiled
 
-./schemas/gschemas.compiled: ./schemas/org.gnome.shell.extensions.gnome-extension-template.gschema.xml
+./schemas/gschemas.compiled: ./schemas/org.gnome.shell.extension.atom-workspaces.gschema.xml
 	glib-compile-schemas ./schemas/
 
 install: install-local
