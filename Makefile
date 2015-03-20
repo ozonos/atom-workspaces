@@ -1,11 +1,10 @@
 # Basic Makefile
 
-UUID = atom-workspaces@numixproject.org
+UUID = atom-workspaces@ozonos.org
 BASE_MODULES = extension.js stylesheet.css metadata.json LICENSE README.md
 EXTRA_MODULES = 
 TOLOCALIZE =  
 INSTALLBASE = ~/.local/share/gnome-shell/extensions
-INSTALLNAME = atom-workspaces@numixproject.org
 
 all: extension
 
@@ -20,9 +19,9 @@ extension: ./schemas/gschemas.compiled
 install: install-local
 
 install-local: _build
-	rm -rf $(INSTALLBASE)/$(INSTALLNAME)
-	mkdir -p $(INSTALLBASE)/$(INSTALLNAME)
-	cp -r ./_build/* $(INSTALLBASE)/$(INSTALLNAME)/
+	rm -rf $(INSTALLBASE)/$(UUID)
+	mkdir -p $(INSTALLBASE)/$(UUID)
+	cp -r ./_build/* $(INSTALLBASE)/$(UUID)/
 	-rm -fR _build
 	echo done
 
